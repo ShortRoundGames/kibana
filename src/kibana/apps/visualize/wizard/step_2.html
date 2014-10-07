@@ -1,0 +1,14 @@
+<h1>
+  I want to create a
+  <span class="pull-right label label-default">Step 2</span>
+</h1>
+
+<ul class="visualizations list-group list-group-menu">
+  <a class="visualization list-group-item list-group-menu-item"
+  	ng-repeat="type in visTypes"
+  	ng-href="{{ visTypeUrl(type) }}">
+    <li>
+      <i class="fa" ng-class="type.icon"></i>{{type.title}}
+    </li>
+  </a>
+</ul>
